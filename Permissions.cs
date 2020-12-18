@@ -7,7 +7,7 @@ namespace OrchardCore.UserGroup
 {
     public class Permissions : IPermissionProvider
     {
-        public static readonly Permission ManageUserGroups = new Permission("ManageUserGroups");
+        public static readonly Permission ManageUserGroups = new Permission("ManageUserGroups", "Manage User Groups");
 
         public Task<IEnumerable<Permission>> GetPermissionsAsync()
         {
